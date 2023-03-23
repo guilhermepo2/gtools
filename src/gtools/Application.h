@@ -29,7 +29,6 @@ namespace gtools {
 
 	private:
 		void Init();
-		void SetupOpenGLBuffers();
 		void DeInit();
 	private:
 		std::string m_windowTitle;

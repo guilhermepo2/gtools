@@ -15,6 +15,12 @@ public:
     void Update(float dt) override {}
 
     void GUIRender() {
+        ImGui::DockSpaceOverViewport();
+
+        ImGui::Begin("Hello World");
+        ImGui::Button("Click me!");
+        ImGui::End();
+
         if (m_showDemoWindow) {
             ImGui::ShowDemoWindow(&m_showDemoWindow);
         }
