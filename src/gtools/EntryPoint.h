@@ -1,14 +1,15 @@
 //
 // EntryPoint.h
 //
+
 #pragma once
 #include "Application.h"
 
 // to be defined on the client
-extern Application* CreateApplication();
+extern gtools::Application* CreateApplication();
 
 int main(int argc, char** argv) {
-    Application* app = CreateApplication();
+    gtools::Application* app = CreateApplication();
 
     if(app != nullptr) {
         app->Run();

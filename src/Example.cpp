@@ -1,10 +1,8 @@
-#include "Layer.h"
-#include "EntryPoint.h"
-#include "imgui.h"
+#include "gtools.h"
 
 static bool g_showDemoWindow = true;
 
-class MyLayer : public Layer {
+class MyLayer : public gtools::Layer {
 public:
     void OnAttach() override {
         m_showDemoWindow = true;
@@ -26,13 +24,13 @@ private:
     bool m_showDemoWindow;
 };
 
-Application* CreateApplication() {
-    AppConfig conf;
+gtools::Application* CreateApplication() {
+    gtools::AppConfig conf;
     conf.WindowTitle = "TOOLS?";
     conf.width = 1024;
     conf.height = 768;
 
-    Application* theApp = new Application(conf);
+    gtools::Application* theApp = new gtools::Application(conf);
     theApp->PushLayer(new MyLayer());
 
     return theApp;
