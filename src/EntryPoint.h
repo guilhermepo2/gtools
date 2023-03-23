@@ -1,6 +1,7 @@
 //
 // EntryPoint.h
 //
+#pragma once
 #include "Application.h"
 
 // to be defined on the client

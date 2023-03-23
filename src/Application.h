@@ -26,7 +26,8 @@ public:
 
 private:
     void Init();
-    void Deinit();
+    void SetupOpenGLBuffers();
+    void DeInit();
 private:
     std::string m_windowTitle;
     int m_width;
