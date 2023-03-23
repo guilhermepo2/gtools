@@ -6,6 +6,9 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # actual project
 add_executable(${PROJECT_NAME}
+        src/EntryPoint.h
+        src/Application.h src/Application.cpp
+        src/Layer.h
         src/main.cpp
         )
 
